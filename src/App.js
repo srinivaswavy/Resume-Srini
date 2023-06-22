@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Srinivasu Chinta</h1>
+        <h1>ORCA</h1>
       </header>
       <main>
         <nav className="tabs">
@@ -26,23 +26,19 @@ function App() {
             About
           </button>
           <button
-            className={`tab ${activeTab === "experience" ? "active" : ""}`}
-            onClick={() => handleTabChange("experience")}
+            className={`tab ${activeTab === "professionsal" ? "active" : ""}`}
+            onClick={() => handleTabChange("professionsal")}
           >
-            Experience
+            professionsal
           </button>
+
           <button
             className={`tab ${activeTab === "education" ? "active" : ""}`}
             onClick={() => handleTabChange("education")}
           >
             Education
           </button>
-          <button
-            className={`tab ${activeTab === "skills" ? "active" : ""}`}
-            onClick={() => handleTabChange("skills")}
-          >
-            Skills
-          </button>
+
           <button
             className={`tab ${activeTab === "hobbies" ? "active" : ""}`}
             onClick={() => handleTabChange("hobbies")}
@@ -52,40 +48,111 @@ function App() {
         </nav>
         {activeTab === "about" && (
           <section>
-            <h2>About Me</h2>
+            <h2>~ What am I thinking now? ~</h2>
             <img className="profile-photo" width={200} src={profilePhoto}></img>
+            <div className="summary">
+              <p>
+                {" "}
+                Hey, I am Srinivas. You can find me from the details in the
+                footer.
+              </p>
+
+              <p>
+                What's about ORCA? That's my favourite team name. Orcas(animals)
+                have a culture of teaching their young as a group. They achieve
+                as a group which I believe is the only path going forward for
+                our species if we want better.
+              </p>
+
+              <p>
+                In other word, SYNERGY. This is the significant perspective that
+                I want to share with my children. Because I got most of my
+                knowledge and skill out of it.
+              </p>
+
+              <p>
+                I may say this out of book reading or management classes. But I
+                request you to believe me that it's been my personal experience
+                over years. Most of us may know this. But still, I want to put
+                it in my own words. I will try to convince with some of my
+                experiences.
+              </p>
+
+              <p>
+                One of our engineer and I paired with other team which was
+                working to remedy a time critial product delivery. That team
+                works out of Chicago. We are in India. We were working in our
+                day time and handing it over to team in USA in their day time.
+                We kept wonderful 24 hour cycle running. Knowledge sharing was
+                so great. We made frieds. We delivered on time.
+              </p>
+
+              <p>
+                I realized, most of the learnings that remembered for a long
+                time are the ones that I discussed with my team mates,
+                frieds and family members. I didn't find a good coach for my
+                swimming classes around me. I learnt swimming by practicing what
+                I watched in youtube. I wanted to teach that to my wife. I
+                tried. My approach was not working. After few trails, I realized
+                not all people can float the same way. Only after having close
+                feedback loops with my wife, I realized there is a lot that I
+                need to understood about water. There I wasn't teaching. We were
+                learning together.
+              </p>
+
+              <p>
+                Once I was working on a rule engine design. That was bit early
+                in my career. I have come up with something. I was proud of what
+                I have done. I presented it to my friend. He asked so many
+                questions. I was expecting a pat on my back. I didn't get it.
+                So, I was disappointed a bit. There, emotionally, I was seeking
+                his approval of my skill. I worked on his feedback before taking
+                it to larger group. Soon, I realized that helped. I tried the
+                same with my senior. This time, I observed, I was actively
+                looking for feedback, not just looking for appreciation. I
+                worked on that too. Design presentation in the large group was
+                pleasant experience for me. I got good recognition out of it. I
+                still remember the patterns I used. I still remember the piece
+                of code even after years past. IT WAS TEAM WORK.
+              </p>
+
+              <p>
+                I think "I can't think about it if I can't talk about it". Only
+                if I can talk about it, I have confidence I am genuinely
+                learning it. Otherwise, I think I haven't been honest to myself
+                about my learning.
+              </p>
+
+              <p>As a parent, I even have numerous experiences with my kids.</p>
+
+              <p>
+                In summary, my goal is to form more of these SYNERGIES. 
+              </p>
+            </div>
+          </section>
+        )}
+        {activeTab === "professionsal" && (
+          <section>
             <div>
+              <p>
+                <h2>Manager, Software engineering</h2>
+                <p>Optum, Hyderabad</p>
+              </p>
               <ul className="about-me-list">
                 <li>
                   <span>
-                    Experienced and skilful Software Engineering Lead with 12
-                    years of valuable experience in designing, developing and
-                    managing software applications that are meeting crucial
-                    needs of our customers.
+                    My responsibilities include designing and delivering
+                    customer facing health applications with two wonderful
+                    teams. Helping the engineers grow up in their careers and
+                    build a culture of better engineering practices. Along with
+                    my managing and leadership responsibilities, I am expected
+                    to design and architect at principal engineer level.
                   </span>
                 </li>
                 <li>
                   <span>
                     Out of my complete experience, my last six years are in
-                    engineering healthcare solutions which are very high on
-                    usage with great loads. I have reputation for designing high
-                    performance and scaling software systems. Bringing forth a
-                    motivated attitude and the ability to establish strong and
-                    productive relationships with all stakeholders.
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    Experience with Docker, Kubernetes, Scala, .NET, React,
-                    Elasticsearch, Postgres(AWS hosted), Kafka. We highly used
-                    AWS services(S3, OpenSearch, EC2, EKS, Rout53, MSK),
-                    Jenkins, GitHub Actions, PagerDuty, Datadog, Splunk.
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    Experience with designing and developing data intensive
-                    applications.
+                    engineering healthcare solutions.
                   </span>
                 </li>
               </ul>
@@ -96,20 +163,25 @@ function App() {
           <section>
             <ul>
               <li>
-                <h2>Senior Lead, Software engineering</h2>
+                <h2>Manager, Software engineering</h2>
                 <p>Optum, Hyderabad</p>
-                <p>MARCH 2021 — PRESENT</p>
+
                 <ul className="about-me-list">
                   <li>
                     <span>
-                      I am responsible for designing and developing health care
-                      applications that help members live healthier lives.
+                      My responsibilities include designing and delivering
+                      customer facing health applications with two wonderful
+                      teams. Helping the engineers grow up in their careers and
+                      build a culture of better engineering practices. Along
+                      with my managing and leadership responsibilities, I am
+                      expected to design and architect at principle engineer
+                      level.
                     </span>
                   </li>
                   <li>
                     <span>
                       I have designed various solutions, which are very high on
-                      usage, using{" "}
+                      usage, using
                       <b>
                         Docker, Kubernetes, Scala, Java, React, Play,
                         Elasticsearch, Postgres(AWS hosted), Kafka. We highly
@@ -211,7 +283,7 @@ function App() {
                   <li>
                     <span>
                       It’s implemented using Microsoft tech stack. It consists
-                      of user facing{" "}
+                      of user facing
                       <b>
                         WPF app, Web Api services, ETLs using SSIS, content
                         management web app using .NET MVC.
@@ -255,7 +327,6 @@ function App() {
                   </li>
                   <li>
                     <span>
-                      {" "}
                       I have written few sandbox solutions that are reusable and
                       easy to deploy in any SharePoint site collection.
                     </span>
@@ -330,7 +401,7 @@ function App() {
           </section>
         )}
 
-{activeTab === "hobbies" && (
+        {activeTab === "hobbies" && (
           <section>
             <ul className="about-me-list">
               <li>
@@ -345,7 +416,6 @@ function App() {
               <li>
                 <span>Studying sociology</span>
               </li>
-              
             </ul>
           </section>
         )}
