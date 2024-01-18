@@ -425,10 +425,7 @@ function App() {
           <FontAwesomeIcon className="contact-icon" icon={faEnvelope} />
           <p className="footer-text">srinivaswavy@gmail.com</p>
         </div>
-        <div className="contact-info">
-          <FontAwesomeIcon className="contact-icon" icon={faPhone} />
-          <p className="footer-text">(091) 9963065094</p>
-        </div>
+        
       </footer>
     </div>
   );
